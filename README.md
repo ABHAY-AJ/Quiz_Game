@@ -1,4 +1,4 @@
-[Watch Video Walkthrough](./screenShots/quiz_walhthrough.mp4)
+[Watch Video Walkthrough](https://drive.google.com/file/d/162HTt0gU1WBd96cE3axWspzG6nmqdIao/view?usp=sharing)
 
 # Live Link
 - [Quiz_Game](https://quiz-game-jbbf.onrender.com/)
