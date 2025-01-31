@@ -16,7 +16,10 @@ Clone the repository to your local machine by running the following commands:
 
 ```bash
 git clone https://github.com/ABHAY-AJ/Quiz_Game.git
-cd quiz-app
+npm install
+
+cd frontend
+
 ```
 
 ### Step 2: Install Dependencies
