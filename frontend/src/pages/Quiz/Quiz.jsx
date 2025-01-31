@@ -4,7 +4,6 @@ import QuizQuestion from "../../components/QuizQuestion/QuizQuestion";
 import QuizSummary from "../../components/QuizSummary/QuizSummary";
 import Leaderboard from "../../components/Leaderboard/Leaderboard";
 import api from "../../api/api";
-import { useSpring, animated } from "react-spring"; // For animations
 import "./Quiz.css";
 
 const Quiz = () => {
@@ -20,12 +19,6 @@ const Quiz = () => {
 
   // Calculate progress as a number (0 to 100)
   const progress = ((currentQuestion + 1) / quizData.length) * 100;
-
-  // Animation for the character
-  const characterAnimation = useSpring({
-    left: progress, // Use a number instead of a string
-    config: { tension: 120, friction: 14 },
-  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -130,17 +123,17 @@ const Quiz = () => {
             ></div>
           </div>
           {/* Animated Cartoon Character */}
-          <animated.div
+          <div
             className="character"
             style={{
-              left: characterAnimation.left.to((x) => `${x}%`), // Convert number to percentage string
+              left: `${progress}%`, // Use CSS for positioning
               position: "absolute",
               bottom: "0",
               transform: "translateX(-50%)",
             }}
           >
             🏃‍♀️‍➡️
-          </animated.div>
+          </div>
         </div>
         <div className="streak">🔥 Streak: {streak}</div>
         {/* Display the badge if the current streak is 3 or more */}

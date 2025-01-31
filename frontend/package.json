@@ -9,7 +9,6 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.4",
     "react-scripts": "5.0.1",
-    "react-spring": "^9.7.5",
     "react-toastify": "^11.0.3",
     "web-vitals": "^4.2.4"
   },
