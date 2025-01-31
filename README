@@ -57,21 +57,3 @@ npm start
 ```
 
 The app will be available at `http://localhost:3000` in your browser.
-
-### Step 5: Build for Production
-
-To build the app for production (optimized and ready for deployment), run the following command:
-
-```bash
-npm run build
-```
-
-The production-ready files will be generated in the `build` folder. You can deploy these files to your preferred hosting service (e.g., Vercel, Netlify, or your own server).
-
----
-
-Feel free to customize the backend setup to your needs, and have fun with the Quiz Game!
-
----
-
-This version improves clarity, formatting, and readability while maintaining the necessary steps and explanations. Let me know if you'd like further adjustments!
