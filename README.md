@@ -71,3 +71,4 @@ The app will be available at `http://localhost:3000` in your browser.
 ![alt text](./screenShots/Screenshot%202025-01-31%20075655.png)
 ![alt text](./screenShots/Screenshot%202025-01-31%20075717.png)
 ![alt text](./screenShots/Screenshot%202025-01-31%20075731.png)
+<video controls src="./screenShots/quiz_walhthrough.mp4" title="Title"></video>
