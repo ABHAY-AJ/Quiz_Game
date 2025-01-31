@@ -1,3 +1,7 @@
+# Live Link
+- [Quiz_Game](https://quiz-game-jbbf.onrender.com/)
+
+
 # Quiz Game
 
 A fun and interactive quiz game built with React, featuring a dynamic quiz interface, a scoring system, and a leaderboard.
@@ -60,3 +64,10 @@ npm start
 ```
 
 The app will be available at `http://localhost:3000` in your browser.
+
+# ScreenShots
+
+![alt text](./screenShots/Screenshot%202025-01-31%20075614.png)
+![alt text](./screenShots/Screenshot%202025-01-31%20075655.png)
+![alt text](./screenShots/Screenshot%202025-01-31%20075717.png)
+![alt text](./screenShots/Screenshot%202025-01-31%20075731.png)
