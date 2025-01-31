@@ -1,0 +1,174 @@
+.quiz {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #ff6f61;
+  transition: width 0.3s ease;
+}
+
+.character {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.streak {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.badge {
+  background: linear-gradient(45deg, #ff6f61, #ffcc5c);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 111, 97, 0.4);
+  animation: bounce 0.5s ease-in-out;
+}
+
+.score-display {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz {
+    padding: 1.5rem;
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .quiz-header h2 {
+    font-size: 1.5rem; /* Smaller heading for tablets */
+  }
+
+  .streak {
+    font-size: 1rem; /* Smaller streak text */
+  }
+
+  .badge {
+    font-size: 0.8rem; /* Smaller badge text */
+    padding: 0.4rem 0.8rem;
+  }
+
+  .character {
+    font-size: 1.5rem; /* Smaller character size */
+  }
+
+  .score-display {
+    font-size: 1rem; /* Smaller score text */
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz {
+    padding: 1rem;
+    max-width: 95%; /* Adjust width for mobile devices */
+  }
+
+  .quiz-header h2 {
+    font-size: 1.2rem; /* Smaller heading for mobile devices */
+  }
+
+  .streak {
+    font-size: 0.9rem; /* Smaller streak text */
+  }
+
+  .badge {
+    font-size: 0.7rem; /* Smaller badge text */
+    padding: 0.3rem 0.6rem;
+  }
+
+  .character {
+    font-size: 1.2rem; /* Smaller character size */
+  }
+
+  .score-display {
+    font-size: 0.9rem; /* Smaller score text */
+  }
+}
+
+.timer {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ff6f61;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design for Timer */
+@media (max-width: 768px) {
+  .timer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer {
+    font-size: 0.9rem;
+  }
+}

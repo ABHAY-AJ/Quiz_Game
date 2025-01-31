@@ -1,0 +1,103 @@
+.quiz-question {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.quiz-question h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.quiz-question ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-question li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  color: white;
+}
+
+.quiz-question li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.quiz-question li.correct {
+  background: rgba(0, 255, 0, 0.3);
+  border: 2px solid green;
+}
+
+.quiz-question li.incorrect {
+  background: rgba(255, 0, 0, 0.3);
+  border: 2px solid red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quiz-question {
+    padding: 1rem;
+    max-width: 90%; /* Adjust width for tablets */
+  }
+
+  .quiz-question h3 {
+    font-size: 1.2rem; /* Smaller question text */
+  }
+
+  .quiz-question li {
+    padding: 0.8rem; /* Smaller padding for options */
+    font-size: 0.9rem; /* Smaller font size for options */
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-question {
+    padding: 0.8rem;
+    max-width: 95%; /* Adjust width for mobile devices */
+  }
+
+  .quiz-question h3 {
+    font-size: 1rem; /* Smaller question text */
+    padding-left: 0.5rem; /* Adjust padding */
+  }
+
+  .quiz-question li {
+    padding: 0.6rem; /* Smaller padding for options */
+    font-size: 0.8rem; /* Smaller font size for options */
+  }
+}

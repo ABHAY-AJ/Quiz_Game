@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  flex-direction: column; /* Ensure all content stacks vertically */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center content vertically */
+  text-align: center; /* Center text inside */
+  width: 100%; /* Full width for better responsiveness */
+  max-width: 1200px; /* Limit max width to prevent stretching */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust heading size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust subheading size for smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 5px; /* Further reduce padding for very small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller heading size for mobile devices */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Smaller subheading size for mobile devices */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller paragraph text size for mobile devices */
+  }
+}
+
+/* Ensure buttons and interactive elements are touch-friendly */
+button, .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  button, .button {
+    padding: 8px 16px; /* Smaller padding for buttons on smaller screens */
+    font-size: 0.9rem; /* Smaller font size for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  button, .button {
+    padding: 6px 12px; /* Even smaller padding for mobile devices */
+    font-size: 0.8rem; /* Smaller font size for mobile devices */
+  }
+}
+
+/* Ensure images and other media are responsive */
+img {
+  max-width: 100%; /* Prevent images from overflowing their containers */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure forms and inputs are responsive */
+input, textarea, select {
+  width: 100%; /* Full width for form inputs */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  input, textarea, select {
+    padding: 8px; /* Smaller padding for form inputs on smaller screens */
+    font-size: 0.9rem; /* Smaller font size for form inputs */
+  }
+}
+
+@media (max-width: 480px) {
+  input, textarea, select {
+    padding: 6px; /* Even smaller padding for mobile devices */
+    font-size: 0.8rem; /* Smaller font size for mobile devices */
+  }
+}
